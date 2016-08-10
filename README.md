@@ -1,4 +1,6 @@
-# php-filewatcher
+The PHP File Watcher
+=========================
+
 This PHP class detects file changes and return it in json format.
 
 How to use:
