@@ -1,7 +1,7 @@
 The PHP File Watcher
 =========================
 
-This PHP class detects file changes and return it in json format.
+This PHP class detects file changes and return it in json format. This class uses SQLite to detect file changes.
 
 How to use:
 -----------
