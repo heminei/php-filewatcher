@@ -4,6 +4,7 @@
  * @author heminei
  * @copyright (c) 2016, heminei
  * @link https://github.com/heminei/php-filewatcher
+ * @version 1.3
  */
 class FileWatcher {
 
@@ -209,6 +210,10 @@ class FileWatcher {
 	}
 
 	private function getDirFiles($dir, $results = []) {
+		if (!is_readable($dir)) {
+			return $results;
+		}
+
 		$files = scandir($dir);
 		foreach ($files as $value) {
 			$path = realpath($dir . DIRECTORY_SEPARATOR . $value);
